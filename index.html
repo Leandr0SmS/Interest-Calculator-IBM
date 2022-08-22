@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <title>Web App – Simple Interest Calculator</title>
+    <script src="resources\script\script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    </head>
+    
+    <body>
+        <div class="maindiv">
+            <h1>Simple Interest Calculator</h1>
+                <div class="mainform">
+            
+                    <form>
+                        <!--Input for amount-->
+                        <label for="principal" class="numberLabel">Amount</label> 
+                        <input type="number"  id="principal" class="numberInput">
+                
+                        <br/>
+                        <!--Input for interest rate with range-->
+                        <label for="rate" class="rangeLabel">Interest Rate</label> 
+                        <input type="range"  id="rate" onchange="updateRate()" min="1" max="20" step="0.25" value="10.25">
+                            <span id="rate_val">10.25</span><span>%</span>
+                        <br/>
+                        <!--Inputs No of Years with droplist of 10 numbers-->
+                        <label for="years" class="yearsLabel">No. of Years</label>
+                        <select id="years" name="years">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select> 
+                        <br/>
+                    </form>
+                    <!--Button to compute interest-->
+                <label for="result"></label> 
+                <button class="buttonLabel" onclick="compute()">Compute Interest</button>
+                    <div id ="resultText">
+                        <span id="result"></span>
+                    </div>
+                </div>
+    
+            <!--copyright message-->
+            <footer id="footer">
+                <p>&#169; Everyone Can Get Rich</p> 
+                <p>This Calculator belongs to Leandro Simoes</p>
+            </footer>
+        </div>
+    </body>
+</html>

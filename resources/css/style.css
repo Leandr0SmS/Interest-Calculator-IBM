@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*body style*/
+body {
+    background-color:black;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    width: 600px;
+    }
+
+/*interest main div style*/
+.maindiv {
+    background: white;
+    color: #000000;
+    padding: 30px 20px;
+    border-radius: 25px;
+    margin: 20px;
+    height:auto;
+    width: 550px;
+}
+
+/*heading style*/
+h1 {
+    color:gray;
+    font-family: verdana;
+    text-align:center;
+    margin:auto;
+}
+
+/*Form style*/
+.mainform {
+    background: white;
+    color: black;
+    width: 400px;
+    padding: 20px;
+    border-radius: 25px;
+    margin: auto;
+    line-height: 2.2;  
+}
+
+/*Input for amount style*/
+#numberLabel {
+    margin-right: 70px;
+}
+#principal{
+    margin-left: 70px;
+}
+
+/*Input for interest rate with range style*/
+.rangeLabel {
+    margin-right: 17px;
+}
+#rate {
+    margin-left: 17px;
+}
+
+/*Inputs No of Years with droplist style*/
+.yearsLabel{
+    margin-right: 18px;
+}
+#years{
+    margin-left: 18px;
+}
+
+/*button style*/
+.buttonLabel{
+    text-align: center;
+    display: inline-block;
+    padding: 1px 3px;
+}
+
+/*result style*/
+
+#resultText {
+    line-height: 1.2;
+}
+
+.highlight {
+    background-color: #ffff00;
+}
+
+/*copyright message style*/
+#footer {
+    text-align: left;
+    padding-left: 20px;
+}
+
+
